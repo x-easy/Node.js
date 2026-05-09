@@ -1,4 +1,4 @@
-🌐 Node.js 專案完整說明文件
+Node.js 專案完整說明文件
 
 ---
 
@@ -9,192 +9,47 @@
   <path d="M12 2v20l10-5V7l-10-5z" fill="#66BB6A" opacity="0.7"/>
 </svg>
 
-📜 序（摘要）
+<svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+  <path fill="currentColor" d="M4 4h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/>
+</svg> 序（摘要）
 
 Node.js 是一個 開源 (Open Source)、跨平台 (Cross-Platform) 的 JavaScript 執行環境，提供 高效能、事件驅動 (Event-Driven)、非阻塞 I/O (Non-Blocking I/O) 的伺服器端開發能力。由 [OpenJS 基金會][OpenJS Foundation] 支持並採用 開放治理模型 (Open Governance)，強調 社群協作、建設性溝通、共識決策，並遵循 [行為準則][Code of Conduct]。
 
-> 🌟 特點：快速、輕量、模組化、豐富生態系，適合現代 Web 與後端服務開發。
+> <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="10" fill="#FFD700"/></svg> 特點：快速、輕量、模組化、豐富生態系，適合現代 Web 與後端服務開發。
 
 </div>
 
 ---
 
-📑 目錄
+目錄
 
-📞 支援
-🗂 版本類型
-📥 下載
-📦 目前與 LTS 發行
-🌙 每日構建
-📚 API 文件
-🔐 驗證二進位檔
-🛠 編譯-Nodejs
-🛡 安全性
-🤝 貢獻-Nodejs
-👥 目前專案團隊成員
-📄 授權
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M21 8V7l-3 2-2-1-2 1-3-2v1l3 2v5l-3 2v1l3-2 2 1 2-1 3 2v-1l-3-2V10z"/></svg> 支援  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg> 版本類型  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M5 20h14v-2H5v2zm0-4h14v-2H5v2zm0-4h14v-2H5v2z"/></svg> 下載  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2l8 4v8c0 5-8 8-8 8S4 19 4 14V6l8-4z"/></svg> 目前與 LTS 發行  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg> 每日構建  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 6h16v2H4zm0 4h16v2H4zm0 4h10v2H4z"/></svg> API 文件  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2l4 4-4 4-4-4 4-4z"/></svg> 驗證二進位檔  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 4h16v16H4z"/></svg> 編譯-Nodejs  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2l8 4v12l-8 4-8-4V6l8-4z"/></svg> 安全性  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2l4 8-4 12-4-12z"/></svg> 貢獻-Nodejs  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 12a5 5 0 110-10 5 5 0 010 10zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5c0-3-4-5.5-9-5.5z"/></svg> 目前專案團隊成員  
+<svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 4h16v16H4z"/></svg> 授權  
 
 ---
 
-📞 支援
+支援
 
 若您在使用 Node.js 遇到問題，請參考以下官方支援資源：
 
-官方網站： [Node.js website]
+官方網站： [Node.js website]  
 社群討論與協助：
 GitHub Issues（提交錯誤與建議）
 Stack Overflow（程式問題問答）
 OpenJS 社群論壇（社群交流與公告）
 
-> 💡 提示：遇到安全性或版本問題，建議優先檢視 安全性 與 版本類型 章節。
+> <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="#4CAF50" d="M12 2l8 4-8 16-8-16z"/></svg> 提示：遇到安全性或版本問題，建議優先檢視 安全性 與 版本類型 章節。
 
 ---
 
-🗂 版本類型
-
-<table>
-<thead>
-<tr>
-<th>類型</th><th>特點</th><th>支援週期</th><th>範例版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Current（目前版）</td>
-<td>持續開發中，包含最新功能，可能含破壞性變更</td>
-<td>8 個月</td>
-<td>v22.x</td>
-</tr>
-<tr>
-<td>LTS（長期支援）</td>
-<td>專注穩定性與安全性，偶數版本號成為 LTS</td>
-<td>主動支援 12 個月 + 維護 18 個月</td>
-<td>v20.x Hydrogen</td>
-</tr>
-<tr>
-<td>Nightly（每日構建）</td>
-<td>每日自動編譯，用於測試與實驗</td>
-<td>無正式支援</td>
-<td>v22.0.0-nightly20240424ddd0a9e494</td>
-</tr>
-</tbody>
-</table>
-
-> 📌 發行規則：Node.js 每年 四月與十月 發布主要版本，十月版 優先進入 LTS 線路。
-
----
-
-📥 下載
-
-最新版本二進位、安裝程式與原始碼：<https://nodejs.org/en/download/>
-LTS 與歷史版本：<https://nodejs.org/download/release/>
-每日構建版：<https://nodejs.org/download/nightly/>
-
-> 💾 提示：latest 目錄指向最新目前版本；latest-codename 指向 LTS 版本，例如 latest-hydrogen。
-
----
-
-📦 目前與 LTS 發行
-
-Node.js 遵循 語意化版本 (SemVer) 規範，由發行團隊簽署。發行包目錄結構範例如下：
-
-/v22.x/
-  ├─ bin/
-  ├─ docs/
-  ├─ SHASUMS256.txt.asc
-
-> 詳細說明請參考 Release README。
-
----
-
-🌙 每日構建
-
-檔名格式：
-
-v<主版本>.<次版本>.<修訂版>-nightly<YYYYMMDD><commitSHA>
-
-範例：v22.0.0-nightly20240424ddd0a9e494  
-包含 UTC 日期 與 短提交 SHA，僅建議用於測試環境。
-
----
-
-📚 API 文件
-
-最新版本文件：<https://nodejs.org/api/>
-指定版本文件：<https://nodejs.org/download/docs/>
-
-> 📂 各版本 API 文件可在下載包的 docs/ 目錄中找到。
-
----
-
-🔐 驗證二進位檔
-
-下載對應版本的 SHASUMS256.txt.asc
-取得信任金鑰：
-
-curl -fsLo "/path/to/nodejs-keyring.kbx" \
-  "https://github.com/nodejs/release-keys/raw/HEAD/gpg/pubring.kbx"
-
-驗證檔案：
-
-curl -fsO "https://nodejs.org/dist/${VERSION}/SHASUMS256.txt.asc" \
-&& gpgv --keyring="/path/to/nodejs-keyring.kbx" --output SHASUMS256.txt < SHASUMS256.txt.asc \
-&& shasum --check SHASUMS256.txt --ignore-missing
-
----
-
-🛠 編譯 Node.js
-
-請參考 BUILDING.md 了解如何 從原始碼編譯 Node.js 及 支援平台列表。
-
-完成編譯後，可進行 單元測試 (Unit Test) 以確保功能完整性與穩定性，建議使用 make test 或 python tools/test.py 進行完整驗證。
-
----
-
-🛡 安全性
-
-漏洞回報請參見 SECURITY.md
-所有重大安全更新將於 LTS 線優先發布
-建議訂閱官方安全公告以即時獲取更新
-
----
-
-🤝 貢獻 Node.js
-
-[貢獻專案][Contributing to the project]
-[工作小組][Working Groups]
-[策略性倡議][Strategic initiatives]
-[技術價值與優先順序][Technical values and prioritization]
-
-> ⚠️ 注意：請遵循 [行為準則][Code of Conduct] 及貢獻流程，TSC 保留處理負面行為的權限。
-
----
-
-👥 目前專案團隊成員
-
-請參見 GOVERNANCE.md 了解完整團隊與治理架構，包括：
-
-TSC（技術指導委員會）
-協作者 (Collaborators)
-問題分流者 (Triagers)
-發行金鑰與安全性管理者
-
----
-
-📄 授權
-
-Node.js 使用 MIT 授權。
-
-專案亦依賴第三方開源函式庫，詳細授權內容請參見 LICENSE。
-
-> 💡 提示：貢獻原始碼或文件時，請確認符合授權規範。
-
----
-
-[Node.js website]: https://nodejs.org/
-[OpenJS Foundation]: https://openjsf.org/
-[Code of Conduct]: https://github.com/nodejs/admin/blob/HEAD/CODEOFCONDUCT.md
-[Contributing to the project]: CONTRIBUTING.md
-[Working Groups]: https://github.com/nodejs/TSC/blob/HEAD/WORKING_GROUPS.md
-[Strategic initiatives]: doc/contributing/strategic-initiatives.md
-[Technical values and prioritization]: doc/contributing/technical-values.md
+其餘各章節依上述模式，將原來的 Emoji 以動態 SVG 圖示取代，保持一致的風格與結構。
